@@ -1,11 +1,11 @@
 general:
-    eventlogger: 25.133.35.196:7197
+    eventlogger: 127.0.0.1:7197
     dc_files:
         - ../otp.dc
         - ../toon.dc
 
 messagedirector:
-    bind: 25.133.35.196:7199
+    bind: 127.0.0.1:7199
 
 uberdogs:
     - class: CentralLogger
@@ -54,8 +54,8 @@ uberdogs:
 
 roles:
     - type: clientagent
-      bind: 25.133.35.196:7198
-      version: "tti-retro-dev"
+      bind: 0.0.0.0:7198
+      version: "ttrv-dev"
       client:
        relocate: true
        add_interest: enabled
@@ -82,5 +82,5 @@ roles:
           max: 399999999
 
     - type: eventlogger
-      bind: 25.133.35.196:7197
+      bind: 0.0.0.0:7197
       output: ../logs/events-%y%m%d_%H%M%S.log
