@@ -12,12 +12,6 @@ set /P PPYTHON_PATH=<PPYTHON_PATH
 
 echo ===============================
 echo Starting Toontown Revive server...
-echo ppython: %PPYTHON_PATH%
-echo Base Channel: %BASE_CHANNEL%
-echo Max Channels: %MAX_CHANNELS%
-echo State Server ID: %STATE_SERVER%
-echo Message Director IP: %ASTRON_IP%
-echo Event Logger IP: %EVENT_LOGGER_IP%
 echo ===============================
 
 %PPYTHON_PATH% -m toontown.uberdog.ServiceStart --base-channel %BASE_CHANNEL% ^
